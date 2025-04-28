@@ -1,5 +1,19 @@
+# Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Ignore all data files (raw and processed)
 data/raw/
 data/processed/
+
+# Ignore output files (plots, reports, models)
 outputs/
+
+# MacOS system files
 .DS_Store
+
+# VSCode settings (if you use it)
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
