@@ -53,12 +53,12 @@ There is a **statistically and practically significant difference** in sleep qua
 
 ```
 /data/
-    cleaned_sleep_data.csv
+   /raw
+      sleepcycle_raw.csv
+   /processed
+      sleepcycle_cleaned.csv
 /notebooks/
-    ab_test_weather_vs_sleep.ipynb
-/visuals/
-    violin_plot.png
-    overlap_plot.png
+    02_ab_testing.ipynb.ipynb
 README.md
 ```
 
