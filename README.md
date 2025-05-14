@@ -43,7 +43,7 @@ To test whether sleep quality significantly differs between:
 - The increase in both mean and median confirms that the difference is **practically meaningful**, not just statistical.
 
 ### 7. Visualization
-- Violin plots and overlapping histograms show clear distribution differences
+- Boxplots and overlapping histograms show clear distribution differences
 
 ---
 
