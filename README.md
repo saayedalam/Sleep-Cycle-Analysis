@@ -47,21 +47,24 @@ To test whether sleep quality significantly differs between:
 
 ---
 
-## 🔍 Deep Dive: Fog vs. Rainy Showers
+## 🔍 Deep Dive: Fog vs. Rainy Showers (Revised)
 
 To identify which specific weather types may influence sleep the most, we compared **Fog** (high, consistent sleep quality) and **Rainy Showers** (lower and more variable).
 
+We initially considered Mann-Whitney U test, but after running **Shapiro-Wilk normality checks**, both groups were found to be **normally distributed**. A variance check revealed **unequal variances**, so we used **Welch’s t-test** — the appropriate test for comparing means under these conditions.
+
 **Results:**
+
 - Mean sleep quality:
   - Fog: **0.895**
   - Rainy Showers: **0.883**
 - Median sleep quality:
   - Fog: **0.930**
   - Rainy Showers: **0.840**
-- Mann-Whitney U test p-value: **0.795** → ❌ Not statistically significant
-- Cliff’s Delta: **0.167** → ✅ Small effect size
+- **Welch’s t-test p-value:** `0.8788` → ❌ **Not statistically significant**
+- **Cliff’s Delta (exploratory):** `0.167` → ✅ Small effect size
 
-While **Fog** showed slightly higher sleep quality, the difference was not statistically significant. This suggests a minor trend in favor of Fog, but not strong enough to draw firm conclusions.
+Although Fog had slightly higher sleep quality, the Welch’s t-test indicates that this difference is likely due to chance. There is a minor trend, but not strong enough to conclude a causal relationship.
 
 ---
 
@@ -72,7 +75,7 @@ There is a **statistically and practically significant difference** in sleep qua
 - 🌧️ Environmental disruption
 - 📉 Incomplete or inconsistent tracking
 
-A deeper dive into specific conditions like **Fog vs. Rainy Showers** showed a small practical difference in favor of Fog, but the result was **not statistically significant**. This highlights the importance of testing visual differences before drawing conclusions.
+A deeper dive into specific conditions like Fog vs. Rainy Showers showed a small practical difference in favor of Fog, but the result was **not statistically significant**. This highlights the importance of confirming visual insights with the **correct statistical test**, depending on data distribution and variance.
 
 ---
 
@@ -94,9 +97,11 @@ README.md
 ## 💡 Next Steps
 
 - Run additional A/B tests:
-  - Steps vs. Sleep Quality
-  - Regularity vs. Sleep Onset
-  - Mood vs. Sleep Metrics
+  - Steps vs. Sleep Quality (using t-test)
+  - Regularity vs. Sleep Onset (Welch’s t-test)
+  - Mood vs. Sleep Metrics (Chi-squared test)
+- Visualize effect sizes across all weather types
+- Explore regression models for continuous predictors (non-A/B)
 
 ---
 
