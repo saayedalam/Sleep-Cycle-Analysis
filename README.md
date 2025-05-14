@@ -43,7 +43,7 @@ To test whether sleep quality significantly differs between:
 - The increase in both mean and median confirms that the difference is **practically meaningful**, not just statistical.
 
 ### 7. Visualization
-- Boxplots and overlapping histograms show clear distribution differences
+- Violin plots and overlapping histograms show clear distribution differences
 
 ---
 
@@ -67,12 +67,12 @@ While **Fog** showed slightly higher sleep quality, the difference was not stati
 
 ## ✅ Conclusion
 
-There is a statistically and practically significant difference in sleep quality between nights with and without recorded weather data. The "No weather" group tends to have lower sleep quality, possibly due to:
+There is a **statistically and practically significant difference** in sleep quality between nights **with and without recorded weather data**. The "No weather" group tends to have lower sleep quality, possibly due to:
 
 - 🌧️ Environmental disruption
 - 📉 Incomplete or inconsistent tracking
 
-This insight may help inform how data quality and weather influence personal sleep tracking or wellness decisions.
+A deeper dive into specific conditions like **Fog vs. Rainy Showers** showed a small practical difference in favor of Fog, but the result was **not statistically significant**. This highlights the importance of testing visual differences before drawing conclusions.
 
 ---
 
@@ -93,9 +93,13 @@ README.md
 
 ## 💡 Next Steps
 
-- Explore specific weather types (e.g., Rain vs. Clear)
-- Test interactions with temperature or city
-- Run additional A/B tests (e.g., Steps vs. Sleep Quality, Regularity vs. Sleep Onset)
+- Explore other specific weather comparisons (e.g., **Snow vs. Rainy Showers**)
+- Visualize **average sleep quality by weather type** (effect size plot)
+- Test interactions with **temperature** or **city**
+- Run additional A/B tests:
+  - Steps vs. Sleep Quality
+  - Regularity vs. Sleep Onset
+  - Mood vs. Sleep Metrics
 
 ---
 
