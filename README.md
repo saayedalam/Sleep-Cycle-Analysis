@@ -93,9 +93,6 @@ README.md
 
 ## 💡 Next Steps
 
-- Explore other specific weather comparisons (e.g., **Snow vs. Rainy Showers**)
-- Visualize **average sleep quality by weather type** (effect size plot)
-- Test interactions with **temperature** or **city**
 - Run additional A/B tests:
   - Steps vs. Sleep Quality
   - Regularity vs. Sleep Onset
